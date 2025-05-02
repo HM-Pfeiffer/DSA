@@ -4,7 +4,7 @@ Welcome to the **DSA** repository! This repository is dedicated to solving vario
 
 ## Features ✨
 
-* **LeetCode Solutions** 💻: The repository contains solutions to a variety of LeetCode problems, ranging from easy to more complex algorithmic challenges. The solutions are written in different programming languages, including but not limited to **Java**, **Python**, and **C++**.
+* **LeetCode Solutions** 💻: The repository contains solutions to a variety of LeetCode problems, ranging from easy to more complex algorithmic challenges. The solutions are written in different programming languages, including but not limited to **Java**, **Python**, and **Javascript**.
 
 * **LeetSync Integration** 🔄: This repository is integrated with **LeetSync**, allowing you to sync your LeetCode progress with GitHub. This means that solutions are always up-to-date, and you can track your problem-solving journey easily.
 
