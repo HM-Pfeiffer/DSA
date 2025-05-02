@@ -4,7 +4,6 @@
  */
 var containsDuplicate = function(nums) {
     const myNumsSet = new Set();
-
     for(const num of nums){
         if (myNumsSet.has(num)){
             return true;
