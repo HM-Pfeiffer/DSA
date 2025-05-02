@@ -24,7 +24,7 @@ jobs:
 
       - name: Run LeetSync Watcher
         run: |
-          python leetsync_watcher.py
+          python DSA/script/leetsync_watcher.py 
 
       - name: Commit and push changes
         run: |
