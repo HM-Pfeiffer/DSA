@@ -1,15 +1,15 @@
 class Solution {
-    public int singleNumber(int[] nums) {
-        Stack<Integer> stack = new Stack<>();
-        Arrays.sort(nums);
 
+    public int singleNumber(int[] nums) {
+        HashSet<Integer> set = new HashSet<>();
+    
         for(int num : nums){
-            if(!stack.isEmpty() && stack.peek() == num){
-                stack.pop();
-            } else {
-                stack.push(num);
+            if(!set.contains(num)){
+                set.add(num);
+            } else{
+                set.remove(num);
             }
         }
-        return stack.pop();
-    }
+        return set.iterator().next();
+    }  
 }
