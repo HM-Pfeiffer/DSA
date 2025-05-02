@@ -4,9 +4,7 @@ class Solution {
         HashSet<Integer> set = new HashSet<>();
     
         for(int num : nums){
-            if(!set.contains(num)){
-                set.add(num);
-            } else{
+            if (!set.add(num)) {
                 set.remove(num);
             }
         }
