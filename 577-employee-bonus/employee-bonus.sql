@@ -1,4 +1,5 @@
 # Write SELECT e.name, b.bonus
+    
 SELECT e.name, b.bonus
 FROM employee e
 LEFT JOIN bonus b
