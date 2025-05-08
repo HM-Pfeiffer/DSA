@@ -9,7 +9,7 @@ class Solution {
             value = map.containsKey(n) ? map.get(n) + 1 : 1;
             map.put(n, value);
 
-            if(i == 0 || (map.containsKey(n) && map.get(n) < 3)){
+            if(i == 0 || (map.containsKey(n) && value < 3)){
                 nums[k] = n;
                 k += 1;
             }
