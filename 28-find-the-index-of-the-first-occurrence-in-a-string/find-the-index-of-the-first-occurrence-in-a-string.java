@@ -9,8 +9,6 @@ class Solution {
         }
         for(int i = 0; (i + needleLength - 1) < haystackLength; i++){
             substring = haystack.substring(i, needleLength + i);
-            System.out.println(substring);
-            System.out.println(i);
             if(substring.equals(needle)){
                 return i;
             }
