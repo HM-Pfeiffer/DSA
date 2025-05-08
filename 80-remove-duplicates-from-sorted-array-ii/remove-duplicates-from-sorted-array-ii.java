@@ -2,13 +2,11 @@ class Solution {
     public int removeDuplicates(int[] nums) {
         int k = 0;
         int value, n;
-        boolean keyExists;
         Map<Integer, Integer> map = new HashMap<>();
 
         for(int i = 0; i < nums.length; i++){
             n = nums[i];
-            keyExists = map.containsKey(n);
-            value = keyExists ? map.get(n) + 1 : 1;
+            value = map.containsKey(n) ? map.get(n) + 1 : 1;
             map.put(n, value);
 
             if(i == 0 || value < 3){
