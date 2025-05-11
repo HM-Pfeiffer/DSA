@@ -1,4 +1,5 @@
 class Solution {
+    
     public boolean isPalindrome(String s) {
         if (s.isBlank()) return true;
         StringBuilder clean_sb = stringDataCleaner(s);
