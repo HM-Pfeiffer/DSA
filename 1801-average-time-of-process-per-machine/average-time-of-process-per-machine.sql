@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# processing time = AVG(end - start)/COUNT(machine_id)
+
 SELECT
     machine_id, 
     ROUND(AVG(end_time - start_time), 3) AS processing_time
