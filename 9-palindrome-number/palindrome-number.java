@@ -6,6 +6,7 @@ class Solution {
         String intToStr = Integer.toString(x);
         StringBuilder sb = new StringBuilder(intToStr).reverse();
         String sbReverseToStr = sb.toString();
+
         return intToStr.equals(sbReverseToStr);
     }
 }
