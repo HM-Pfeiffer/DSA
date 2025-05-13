@@ -1,5 +1,4 @@
 class Solution {
-
     public Map<Integer, Integer> mapMaker(int[] nums){
         Map<Integer, Integer> map = new HashMap<>();
 
