@@ -2,6 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
+
 var majorityElement = function(nums) {
     let maxCount = 0;
     let majority = -1;
