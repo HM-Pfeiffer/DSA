@@ -10,6 +10,6 @@ class Solution {
             }
             if (s_index == s_length) return true;
         }
-        return s_index == s_length;
+        return false;
     }
 }
