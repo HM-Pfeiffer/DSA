@@ -13,8 +13,6 @@ class Solution:
     
     def longestPalindrome(self, s: str) -> str:
         s_len = len(s)
-        if s_len == 1 or (s_len == 2 and s[0] != s[1]):
-            return s[0]
             
         for i in range(s_len):
             # assign l and r pointers based on even or odd 
