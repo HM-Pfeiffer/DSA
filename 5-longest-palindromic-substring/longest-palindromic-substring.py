@@ -13,11 +13,8 @@ class Solution:
     
     def longestPalindrome(self, s: str) -> str:
         s_len = len(s)
-            
         for i in range(s_len):
-            # assign l and r pointers based on even or odd 
-            self.checkSubstringsForPalindromes(s, i, i)
-            self.checkSubstringsForPalindromes(s, i, i + 1)
-
+            self.checkSubstringsForPalindromes(s, i, i)       # odd length
+            self.checkSubstringsForPalindromes(s, i, i + 1)   # even length
         return self.res
 
