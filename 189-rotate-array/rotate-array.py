@@ -9,12 +9,14 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        if k != 0:
-            length = len(nums)
-            k %= length
-            self.reverse(nums, 0, length - 1)
-            self.reverse(nums, 0, k - 1)
-            self.reverse(nums, k, length - 1)
+        if k == 0:
+            return
+
+        length = len(nums)
+        k %= length
+        self.reverse(nums, 0, length - 1)
+        self.reverse(nums, 0, k - 1)
+        self.reverse(nums, k, length - 1)
         
 
 
