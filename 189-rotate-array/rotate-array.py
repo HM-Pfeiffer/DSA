@@ -2,7 +2,8 @@ class Solution:
     def reverse(self, nums: List[int], l: int, r: int) -> List[int]:
         while l < r:
             nums[l], nums[r] = nums[r], nums[l]
-            l, r = l + 1, r - 1
+            l += 1
+            r -= 1
 
     def rotate(self, nums: List[int], k: int) -> None:
         """
