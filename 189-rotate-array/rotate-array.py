@@ -13,13 +13,12 @@ class Solution:
         """
         self.nums = nums
         length = len(self.nums)
-        if length < 2 or k == 0:
-            return
-
-        k = k % length
-        self.reverse(0, length - 1)
-        self.reverse(0, k - 1)
-        self.reverse(k, length - 1)
+        
+        if length >= 2 or k != 0:
+            k = k % length
+            self.reverse(0, length - 1)
+            self.reverse(0, k - 1)
+            self.reverse(k, length - 1)
         
 
 
