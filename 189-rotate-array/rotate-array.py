@@ -9,9 +9,8 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        length = len(nums)
-
         if k != 0:
+            length = len(nums)
             k %= length
             self.reverse(nums, 0, length - 1)
             self.reverse(nums, 0, k - 1)
