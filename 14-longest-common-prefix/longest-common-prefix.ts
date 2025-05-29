@@ -12,5 +12,4 @@ function longestCommonPrefix(strs: string[]): string {
         prefix += shortest_word[i];
     }
         return prefix;
-
 };
