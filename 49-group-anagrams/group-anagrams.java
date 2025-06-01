@@ -8,7 +8,12 @@ class Solution {
                 alphabet[c - 'a']++;
             }
 
-            String key = Arrays.toString(alphabet);
+            StringBuilder sb = new StringBuilder();
+            for (int count : alphabet) {
+                sb.append(count).append('#'); // '#' ensures uniqueness
+            }
+            String key = sb.toString();
+            // String key = Arrays.toString(alphabet);
             anagramsMap.computeIfAbsent(key, k -> new ArrayList<>()).add(s);
         }
         return new ArrayList<>(anagramsMap.values());
