@@ -1,16 +1,11 @@
-class Solution(object):
-    def pivotIndex(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        global_sum = sum(nums)
+class Solution:
+    def pivotIndex(self, nums: List[int]) -> int:
         left_sum = 0
+        global_sum = sum(nums)
 
-        for i, n in enumerate(nums):
-            if global_sum - (2 * left_sum) == n:
+        for i, num in enumerate(nums):
+            if global_sum - (left_sum * 2) == num:
                 return i
-
-            left_sum += n
+            left_sum += num  
         
         return -1
