@@ -1,12 +1,11 @@
-from collections import Counter
+from collections import Counter 
 
-class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        # count the frequency of the elements of nums
+class Solution(object):
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
         count = Counter(nums)
-
-        # use a heap to get the k most frequent nums
-        return [item for item, freq in count.most_common(k)]
-
-
-        
+        return [item for item, _ in count.most_common(k)]
