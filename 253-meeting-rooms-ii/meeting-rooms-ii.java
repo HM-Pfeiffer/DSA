@@ -7,6 +7,7 @@ import java.util.*;
             - Allocate room (add current meeting’s end time)
     Step 4: Heap size is the number of rooms needed
  */
+
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
         if (intervals == null || intervals.length == 0) return 0;
