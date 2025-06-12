@@ -18,6 +18,10 @@ class Solution {
                 heap.poll();
             }
             heap.offer(interval[1]);
+
+            for (Integer n : heap) {
+                System.out.println("number is: " + n);
+            }
         }
         return heap.size();
     }
