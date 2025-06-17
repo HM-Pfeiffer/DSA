@@ -1,12 +1,13 @@
 /**
     step 1: create a hashmap that will store the string, int freq of each word, declare a result array
-    step 2: iterate through the input string and populate hashmap 
+    step 2: iterate through the input string and populate hashmap (do for both String sentences)
     step 3: iterate through values
-                // if the value is greater than one, push to result array
+                // if the value is equal to one one, push to result array
     step 4: return String[] result
  */
 
 class Solution {
+    
     public String[] uncommonFromSentences(String s1, String s2) {
         List<String> result = new ArrayList<>();
         HashMap<String,Integer> wordFrequency = new HashMap<>();
