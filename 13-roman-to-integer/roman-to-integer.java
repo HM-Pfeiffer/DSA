@@ -4,7 +4,7 @@
  */
 
 class Solution {
-    private final Map<Character, Integer> romanNumerals = Map.of(
+    private final Map<Character, Integer> numerals = Map.of(
         'I', 1,
         'V', 5, 
         'X', 10, 
@@ -20,16 +20,11 @@ class Solution {
         int resultSum = 0;
 
         for (int i = 1; i <= length; i++) {
-            int prevNumberValue = romanNumerals.get(chars[i - 1]); 
-
-            if (i != length) {
-                int currentNumberValue = romanNumerals.get(chars[i]); 
-                if (prevNumberValue < currentNumberValue) {
-                    prevNumberValue *= -1;
-                }
+            if (i != length && numerals.get(chars[i - 1]) < numerals.get(chars[i])) {
+                resultSum -= numerals.get(chars[i - 1]);
+            } else {
+                resultSum += numerals.get(chars[i - 1]);
             }
-
-            resultSum += prevNumberValue;
         }
         return resultSum;
     }
